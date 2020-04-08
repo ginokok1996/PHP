@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Hoofdstuk 2</title>
+    <title>Hoofdstuk 3</title>
 </head>
 <body>
     <a href="/index.php">Terug naar main page</a>
@@ -13,5 +13,8 @@
     <a href="opdracht2.php">Opdracht 2</a>
     <a href="opdracht3.php">Opdracht 3</a>
     <a href="opdracht4.php">Opdracht 4</a>
+    <a href="opdracht5.php">Opdracht 5</a>
+    <a href="opdracht6.php">Opdracht 6</a>
+    <a href="opdracht7.php">Opdracht 7</a>
 </body>
 </html>
