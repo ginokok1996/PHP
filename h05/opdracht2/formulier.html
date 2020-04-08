@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      select {
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="response.php" method="post">
+      <select multiple name="dieren[]">
+        <option value="pet1">Hamster</option>
+        <option value="pet2">Zwarte Hond</option>
+        <option value="pet3">Bruine Hond</option>
+        <option value="pet4">Kat</option>
+        <option value="pet5">Witte hond</option>
+      </select>
+
+      <input type="submit" name="knop" /> <br />
+      <a href="/h05/hoofdstuk5.php">Terug</a>
+    </form>
+  </body>
+</html>
