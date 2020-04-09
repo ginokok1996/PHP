@@ -17,6 +17,7 @@
 <body>
     <a href="/index.php">Terug naar main page</a>
     <a href="/h06/opdracht1/index.php">Opdracht 1</a>
+    <a href="/h06/opdracht2/formulier.html">Opdracht 2</a>
 
 
 </body>
