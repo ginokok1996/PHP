@@ -77,6 +77,12 @@ while ($array = $stmt->fetch()) {
   <p><a href="/h07/admin.php">Admin area</a></p>
   <p><a href="/h07/formulier.php?logout">Uitloggen</a></p>
   <p><a href="/index.php">Terug naar main page</a></p>
+  <div>
+    Gebuikers:
+    <p>klaas@carpets.nl | snoepje777</p>
+    <p>piet@worldonline.nl | doetje123</p>
+    <p>truushendriks@wegweg.nl | arkiearkie201</p>
+  </div>
 </body>
 
 </html>
