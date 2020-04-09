@@ -15,3 +15,14 @@ try {
 $query = "SELECT * FROM loginopdracht";
 $stmt = $conn->prepare($query) or die('17');
 $stmt->execute() or die('error 19');
+
+
+while ($array = $stmt->fetch()) {
+    if ($_POST['email'] == $array['email'] && $_POST['wachtwoord'] == $array['wachtwoord']) {
+        echo "Welkom!";
+        break;
+    } else {
+        echo "Sorry, geen toegang!";
+        break;
+    }
+}
