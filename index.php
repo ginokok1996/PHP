@@ -23,7 +23,7 @@
     <a href="h05/hoofdstuk5.php">Hoofdstuk 5</a>
     <a href="h06/hoofdstuk6.php">Hoofdstuk 6</a>
     <a href="h07/formulier.php">Hoofdstuk 7</a>
-
+    <a href="h08/hoofdstuk8.php">Hoofdstuk 8</a>
 
 
 </body>
