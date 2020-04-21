@@ -43,7 +43,9 @@
 
     $broodlijst = new BroodLijst();
 
-    $broodlijst->voegBroodToe(isset($_GET['naam']), isset($_GET['soort']), isset($_GET['vorm']), isset($_GET['gewicht']));
+    $broodlijst->voegBroodToe("Gino", "wit", "rond", 50);
+
+    $broodlijst->voegBroodToe($_GET['naam'], $_GET['soort'], $_GET['vorm'], $_GET['gewicht']);
 
     foreach ($broodlijst->getBroodjes() as $brood) {
       echo $brood->getNaam();
