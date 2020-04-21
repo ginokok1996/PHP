@@ -24,6 +24,7 @@
     <a href="h06/hoofdstuk6.php">Hoofdstuk 6</a>
     <a href="h07/formulier.php">Hoofdstuk 7</a>
     <a href="h08/hoofdstuk8.php">Hoofdstuk 8</a>
+    <a href="h09/overzicht.php">Hoofdstuk 9</a>
 
 
 </body>
