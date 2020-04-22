@@ -37,21 +37,32 @@
       <input type="text" name="gewicht" id="gewicht" /> <br />
       <input type="submit" name="" id="" />
     </form>
+
+
     <?php
+    session_start();
     require("brood.php");
     require("broodlijst.php");
 
     $broodlijst = new BroodLijst();
 
     $broodlijst->voegBroodToe("Gino", "wit", "rond", 50);
+    $broodlijst->voegBroodToe("WitRond", "wit", "rond", 50);
 
-    $broodlijst->voegBroodToe($_GET['naam'], $_GET['soort'], $_GET['vorm'], $_GET['gewicht']);
+    $naam = $_GET['naam'];
+    $soort = $_GET['soort'];
+    $vorm = $_GET['vorm'];
+    $gewicht = $_GET['gewicht'];
 
-    foreach ($broodlijst->getBroodjes() as $brood) {
-      echo $brood->getNaam();
+    $broodlijst->voegBroodToe($naam, $soort, $vorm, $gewicht);
+
+    $_SESSION['broodjes'] = $broodlijst->getBroodjes();
+    foreach ($_SESSION['broodjes'] as $brood) {
+      echo $brood->getNaam() . "<br>";
     }
-
     ?>
+
+
   </div>
 </body>
 

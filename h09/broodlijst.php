@@ -2,7 +2,7 @@
 
 class BroodLijst
 {
-    private $broodjes;
+    private $broodjes = [];
 
     function __construct()
     {
