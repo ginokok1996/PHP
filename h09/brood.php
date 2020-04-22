@@ -20,4 +20,17 @@ class Brood
     {
         return $this->naam;
     }
+
+    function getSoort()
+    {
+        return $this->soort;
+    }
+    function getVorm()
+    {
+        return $this->vorm;
+    }
+    function getGewicht()
+    {
+        return $this->gewicht;
+    }
 }

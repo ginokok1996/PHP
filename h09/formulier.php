@@ -1,3 +1,19 @@
+<?php
+$servername = "localhost";
+$username = "ginokok1996_nl_school";
+$password = "4MpJtMQBb4ff";
+
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=ginokok1996_nl_school", $username, $password);
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,29 +53,17 @@
       <input type="text" name="gewicht" id="gewicht" /> <br />
       <input type="submit" name="" id="" />
     </form>
+    <a href="/h09/overzicht.php">Terug naar het overzicht</a>
 
 
     <?php
-    session_start();
     require("brood.php");
     require("broodlijst.php");
 
     $broodlijst = new BroodLijst();
 
-    $broodlijst->voegBroodToe("Gino", "wit", "rond", 50);
-    $broodlijst->voegBroodToe("WitRond", "wit", "rond", 50);
 
-    $naam = $_GET['naam'];
-    $soort = $_GET['soort'];
-    $vorm = $_GET['vorm'];
-    $gewicht = $_GET['gewicht'];
-
-    $broodlijst->voegBroodToe($naam, $soort, $vorm, $gewicht);
-
-    $_SESSION['broodjes'] = $broodlijst->getBroodjes();
-    foreach ($_SESSION['broodjes'] as $brood) {
-      echo $brood->getNaam() . "<br>";
-    }
+    $broodlijst->voegBroodToe($_GET['naam'], $_GET['soort'], $_GET['vorm'], $_GET['gewicht']);
     ?>
 
 
