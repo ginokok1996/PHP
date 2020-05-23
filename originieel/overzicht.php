@@ -21,8 +21,8 @@
 </head>
 
 <body>
-    <a href="/index.php">Terug naar main page</a> <br> <br>
-    <a href="/h09/formulier.php">Broodje Toevoegen</a> <br>
+    <a href="php/index.php">Terug naar main page</a> <br> <br>
+    <a href="php/h09/formulier.php">Broodje Toevoegen</a> <br>
     <table>
         <tr>
             <td>Naam</td>

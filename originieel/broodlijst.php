@@ -4,8 +4,8 @@ class BroodLijst
 
     private $broodjes = [];
     private $servername = "localhost";
-    private $username = "ginokok1996_nl_school";
-    private $password = "4MpJtMQBb4ff";
+    private $username = "root";
+    private $password = "";
     private $conn;
     private $query;
 
